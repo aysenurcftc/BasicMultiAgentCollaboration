@@ -43,6 +43,5 @@ workflow.add_edge(START, "Researcher")
 graph = workflow.compile()
 
 graph.get_graph().draw_mermaid_png(output_file_path="graph.png")
-print("Graph has START:", START in graph.get_graph().nodes)
-print("Graph has END:", END in graph.get_graph().nodes)
+
 

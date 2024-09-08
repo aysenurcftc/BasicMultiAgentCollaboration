@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
 from graph.graph import graph
@@ -11,9 +10,7 @@ if __name__ == "__main__":
         {
             "messages": [
                 HumanMessage(
-                    content="Fetch the UK's GDP over the past 5 years,"
-                            " then draw a line graph of it."
-                            " Once you code it up, finish."
+                    content="Give information about what Python is and draw a bar plot comparing it with other programming languages and its usage. Once you code it up, finish."
                 )
             ],
         },
@@ -22,9 +19,10 @@ if __name__ == "__main__":
     )
 
 
-    for s in events:
-        print(s)
-        print("----")
+    for event in events:
+        print(event)
+        print("------")
+
 
 
 

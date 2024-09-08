@@ -8,12 +8,11 @@ from langchain_experimental.utilities import PythonREPL
 
 # Warning: This executes code locally, which can be unsafe when not sandboxed
 
-
 load_dotenv()
 
 repl = PythonREPL()
 
-tavily_tool = TavilySearchResults(max_results=3)
+tavily_tool = TavilySearchResults(max_results=1)
 
 @tool
 def python_repl(
